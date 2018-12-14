@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		BC22CF0E21C3F36E006F5A80 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC22CF0D21C3F36E006F5A80 /* main.cpp */; };
+		BC22CF1B21C3F82E006F5A80 /* FSParray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC22CF1921C3F82E006F5A80 /* FSParray.cpp */; };
+		BC22CF1E21C3F84C006F5A80 /* FSPString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC22CF1C21C3F84C006F5A80 /* FSPString.cpp */; };
+		BC22CF2121C3F85E006F5A80 /* FSPtree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC22CF1F21C3F85E006F5A80 /* FSPtree.cpp */; };
+		BC22CF2421C3F86F006F5A80 /* FSPqueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC22CF2221C3F86F006F5A80 /* FSPqueue.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,14 @@
 /* Begin PBXFileReference section */
 		BC22CF0A21C3F36E006F5A80 /* AlgorithmReviewKnowleage */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AlgorithmReviewKnowleage; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC22CF0D21C3F36E006F5A80 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		BC22CF1921C3F82E006F5A80 /* FSParray.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FSParray.cpp; sourceTree = "<group>"; };
+		BC22CF1A21C3F82E006F5A80 /* FSParray.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FSParray.hpp; sourceTree = "<group>"; };
+		BC22CF1C21C3F84C006F5A80 /* FSPString.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FSPString.cpp; sourceTree = "<group>"; };
+		BC22CF1D21C3F84C006F5A80 /* FSPString.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FSPString.hpp; sourceTree = "<group>"; };
+		BC22CF1F21C3F85E006F5A80 /* FSPtree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FSPtree.cpp; sourceTree = "<group>"; };
+		BC22CF2021C3F85E006F5A80 /* FSPtree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FSPtree.hpp; sourceTree = "<group>"; };
+		BC22CF2221C3F86F006F5A80 /* FSPqueue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FSPqueue.cpp; sourceTree = "<group>"; };
+		BC22CF2321C3F86F006F5A80 /* FSPqueue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FSPqueue.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +69,57 @@
 		BC22CF0C21C3F36E006F5A80 /* AlgorithmReviewKnowleage */ = {
 			isa = PBXGroup;
 			children = (
+				BC22CF1421C3F6BF006F5A80 /* Data _structures(数据结构) */,
 				BC22CF0D21C3F36E006F5A80 /* main.cpp */,
 			);
 			path = AlgorithmReviewKnowleage;
+			sourceTree = "<group>";
+		};
+		BC22CF1421C3F6BF006F5A80 /* Data _structures(数据结构) */ = {
+			isa = PBXGroup;
+			children = (
+				BC22CF1521C3F6BF006F5A80 /* array(数组) */,
+				BC22CF1621C3F6BF006F5A80 /* string(字符串) */,
+				BC22CF1721C3F6BF006F5A80 /* tree(树) */,
+				BC22CF1821C3F6BF006F5A80 /* queue(栈和队列) */,
+			);
+			path = "Data _structures(数据结构)";
+			sourceTree = "<group>";
+		};
+		BC22CF1521C3F6BF006F5A80 /* array(数组) */ = {
+			isa = PBXGroup;
+			children = (
+				BC22CF1921C3F82E006F5A80 /* FSParray.cpp */,
+				BC22CF1A21C3F82E006F5A80 /* FSParray.hpp */,
+			);
+			path = "array(数组)";
+			sourceTree = "<group>";
+		};
+		BC22CF1621C3F6BF006F5A80 /* string(字符串) */ = {
+			isa = PBXGroup;
+			children = (
+				BC22CF1C21C3F84C006F5A80 /* FSPString.cpp */,
+				BC22CF1D21C3F84C006F5A80 /* FSPString.hpp */,
+			);
+			path = "string(字符串)";
+			sourceTree = "<group>";
+		};
+		BC22CF1721C3F6BF006F5A80 /* tree(树) */ = {
+			isa = PBXGroup;
+			children = (
+				BC22CF1F21C3F85E006F5A80 /* FSPtree.cpp */,
+				BC22CF2021C3F85E006F5A80 /* FSPtree.hpp */,
+			);
+			path = "tree(树)";
+			sourceTree = "<group>";
+		};
+		BC22CF1821C3F6BF006F5A80 /* queue(栈和队列) */ = {
+			isa = PBXGroup;
+			children = (
+				BC22CF2221C3F86F006F5A80 /* FSPqueue.cpp */,
+				BC22CF2321C3F86F006F5A80 /* FSPqueue.hpp */,
+			);
+			path = "queue(栈和队列)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +178,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC22CF1E21C3F84C006F5A80 /* FSPString.cpp in Sources */,
+				BC22CF2121C3F85E006F5A80 /* FSPtree.cpp in Sources */,
 				BC22CF0E21C3F36E006F5A80 /* main.cpp in Sources */,
+				BC22CF1B21C3F82E006F5A80 /* FSParray.cpp in Sources */,
+				BC22CF2421C3F86F006F5A80 /* FSPqueue.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
