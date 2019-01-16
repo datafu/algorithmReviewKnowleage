@@ -12,16 +12,19 @@
 		BC22CF1E21C3F84C006F5A80 /* FSPString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC22CF1C21C3F84C006F5A80 /* FSPString.cpp */; };
 		BC22CF2121C3F85E006F5A80 /* FSPtree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC22CF1F21C3F85E006F5A80 /* FSPtree.cpp */; };
 		BC22CF2421C3F86F006F5A80 /* FSPqueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC22CF2221C3F86F006F5A80 /* FSPqueue.cpp */; };
+		BCBEAD4521EF09EB00D4FCC5 /* FSPsyntax.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BCBEAD4321EF09EB00D4FCC5 /* FSPsyntax.cpp */; };
+		BCBEAD5221EF2D7200D4FCC5 /* FStest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BCBEAD5021EF2D7200D4FCC5 /* FStest.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		BC22CF0821C3F36E006F5A80 /* CopyFiles */ = {
+		BC22CF0821C3F36E006F5A80 /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -37,6 +40,11 @@
 		BC22CF2021C3F85E006F5A80 /* FSPtree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FSPtree.hpp; sourceTree = "<group>"; };
 		BC22CF2221C3F86F006F5A80 /* FSPqueue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FSPqueue.cpp; sourceTree = "<group>"; };
 		BC22CF2321C3F86F006F5A80 /* FSPqueue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FSPqueue.hpp; sourceTree = "<group>"; };
+		BC22CF2521C53032006F5A80 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		BCBEAD4321EF09EB00D4FCC5 /* FSPsyntax.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FSPsyntax.cpp; sourceTree = "<group>"; };
+		BCBEAD4421EF09EB00D4FCC5 /* FSPsyntax.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FSPsyntax.hpp; sourceTree = "<group>"; };
+		BCBEAD5021EF2D7200D4FCC5 /* FStest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FStest.cpp; sourceTree = "<group>"; };
+		BCBEAD5121EF2D7200D4FCC5 /* FStest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FStest.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				BC22CF0C21C3F36E006F5A80 /* AlgorithmReviewKnowleage */,
+				BC22CF2521C53032006F5A80 /* README.md */,
 				BC22CF0B21C3F36E006F5A80 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,6 +78,7 @@
 		BC22CF0C21C3F36E006F5A80 /* AlgorithmReviewKnowleage */ = {
 			isa = PBXGroup;
 			children = (
+				BCBEAD4D21EF283B00D4FCC5 /* test(测试用例编写) */,
 				BC22CF1421C3F6BF006F5A80 /* Data _structures(数据结构) */,
 				BC22CF0D21C3F36E006F5A80 /* main.cpp */,
 			);
@@ -78,6 +88,7 @@
 		BC22CF1421C3F6BF006F5A80 /* Data _structures(数据结构) */ = {
 			isa = PBXGroup;
 			children = (
+				BCBEAD4221EF09AD00D4FCC5 /* c++ */,
 				BC22CF1521C3F6BF006F5A80 /* array(数组) */,
 				BC22CF1621C3F6BF006F5A80 /* string(字符串) */,
 				BC22CF1721C3F6BF006F5A80 /* tree(树) */,
@@ -122,6 +133,24 @@
 			path = "queue(栈和队列)";
 			sourceTree = "<group>";
 		};
+		BCBEAD4221EF09AD00D4FCC5 /* c++ */ = {
+			isa = PBXGroup;
+			children = (
+				BCBEAD4321EF09EB00D4FCC5 /* FSPsyntax.cpp */,
+				BCBEAD4421EF09EB00D4FCC5 /* FSPsyntax.hpp */,
+			);
+			path = "c++";
+			sourceTree = "<group>";
+		};
+		BCBEAD4D21EF283B00D4FCC5 /* test(测试用例编写) */ = {
+			isa = PBXGroup;
+			children = (
+				BCBEAD5021EF2D7200D4FCC5 /* FStest.cpp */,
+				BCBEAD5121EF2D7200D4FCC5 /* FStest.hpp */,
+			);
+			path = "test(测试用例编写)";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,7 +160,7 @@
 			buildPhases = (
 				BC22CF0621C3F36E006F5A80 /* Sources */,
 				BC22CF0721C3F36E006F5A80 /* Frameworks */,
-				BC22CF0821C3F36E006F5A80 /* CopyFiles */,
+				BC22CF0821C3F36E006F5A80 /* Copy Files */,
 			);
 			buildRules = (
 			);
@@ -178,8 +207,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCBEAD5221EF2D7200D4FCC5 /* FStest.cpp in Sources */,
 				BC22CF1E21C3F84C006F5A80 /* FSPString.cpp in Sources */,
 				BC22CF2121C3F85E006F5A80 /* FSPtree.cpp in Sources */,
+				BCBEAD4521EF09EB00D4FCC5 /* FSPsyntax.cpp in Sources */,
 				BC22CF0E21C3F36E006F5A80 /* main.cpp in Sources */,
 				BC22CF1B21C3F82E006F5A80 /* FSParray.cpp in Sources */,
 				BC22CF2421C3F86F006F5A80 /* FSPqueue.cpp in Sources */,
